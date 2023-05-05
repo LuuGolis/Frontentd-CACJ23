@@ -30,11 +30,13 @@ header a{
     font-size: small;
 }
 footer{
-    height:12vh;
+    height:12%;
     width:100%;
     background-color: rgb(25, 25, 49);
 }
 .banner{
-height:33vh;
+height:100vh;
 background-image: url(./assets/ba1.jpg);
+background-repeat: no-repeat;
+background-size:cover;
 }
