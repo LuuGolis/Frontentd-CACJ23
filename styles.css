@@ -53,20 +53,27 @@ footer {
 
 
 .texto-banner {
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-bottom: 5%;
     padding-right: 12%;
+    height:15%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: end;
     color: antiquewhite;
-    z-index: 1;
 }
 .texto-banner p{
     width: 50%;
 }
-
-.buttons {
-    padding-top: 1%;
+#oradores p{
+    text-align: center;
+    margin-bottom: 0%;
+    font-weight: lighter;
 }
+#oradores h2{
+    text-align: center;
+    margin-top: 0%;
+}
+
