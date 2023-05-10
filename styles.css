@@ -42,6 +42,11 @@ footer {
     width: 100%;
     background-color: rgb(25, 25, 49);
 }
+footer a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: small;
+}
 
 .banner {
 
@@ -74,6 +79,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: blueviolet;
    
 
 }
@@ -89,9 +95,44 @@ footer {
 .card{
     margin: 1%;
 }
+
+.tema{
+    display: inline;
+}
+#js{
+    background-color: rgb(255, 234, 0);
+    width: 45%;
+    border-radius: 8%;
+    font-weight:900;
+}
+#react{
+    background-color: rgb(7, 193, 7);
+    color: antiquewhite;
+    width:30%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+#negocios{
+    background-color: grey;
+    color: antiquewhite;
+    width:40%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+#startups{
+    background-color: rgb(156, 11, 11);
+    color: antiquewhite;
+    width:35%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+
+
+
 @media screen and (max-width:576px) {
     #oradores{
         align-items: center;
+        width: 80%;
         
     }
     #oradores .card{
@@ -101,10 +142,11 @@ footer {
 }
 @media screen and (min-width:768px) {
     #oradores{
-        max-width: 80%;
+        width: 80%;
         margin-left: 10%;
     }
    
 }
+
 
 
