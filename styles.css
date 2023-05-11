@@ -127,6 +127,19 @@ footer a{
     font-weight: 900;
 }
 
+#slides{
+    display: flex;
+    flex-direction: row;
+}
+#slides img{
+    width: 480px;
+    height:270;
+}
+
+.texto{
+    color:antiquewhite;
+    background-color: rgb(52, 51, 51);
+}
 
 
 @media screen and (max-width:576px) {
