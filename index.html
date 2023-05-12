@@ -13,7 +13,7 @@
  </head>
 
  <body>
-    <header>
+    <header class="sticky-top">
         <img class="logo" src="./assets/codoacodo.png" alt="Logo codo a codo">
         <p>Conf Bs As</p>
         <a href="#">La conferencia</a>
@@ -112,26 +112,35 @@
                     <div class="carousel-item active">
                         <div id="slides">
                         <img src="./assets/ba3.jpg" class="d-block w-50" alt="BsAS">
-                        <div class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+                        <div class="texto">
+                            <h2>Lugar - Mes</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
-                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</div>
+                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
+                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
                         </div>
                     </div>
                     </div>
                     <div class="carousel-item">
                         <div id="slides">
                         <img src="./assets/honolulu.jpg" class="d-block w-50" alt="Honolulu">
-                        <div class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+                        <div class="texto">
+                            <h2>Lugar - Mes</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
-                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</div>
+                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
+                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div id="slides">
                         <img src="./assets/ba2.jpg" class="d-block w-50" alt="España">
-                        <div class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+                        <div class="texto">
+                            <h2>Lugar - Mes</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
-                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</div>
+                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
+                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
                         </div>
                     </div>
                 </div>
@@ -147,12 +156,28 @@
                 </button>         
         </section>
 
-        <section class="form">
+        <section class="row" id="formulario">
+            <p>Conviértete en</p>
+            <h2>ORADOR</h2>
+            <p>Anótate para dar una charla ignite ¡Cuéntanos de qué quieres hablar!</p>
+            <form class="mb-3  col-10">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre">
+        
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" >
+        
+                <label for="tema-charla" class="form-label">¿Sobre qué quieres hablar?</label>
+                <textarea class="form-control" id="tema-charla" rows="3"></textarea>
+                <p>Recuerda incluir un título para tu charla</p>
+                <input type="submit" value="Submit" id="submit">
+              </form>
+        
 
         </section>
     </main>
 
-    <footer class="mt-4">
+    <footer class="mt-4 sticky-bottom">
         <a>Preguntas frecuentes</a>
         <a>Contáctanos</a>
         <a>Prensa</a>

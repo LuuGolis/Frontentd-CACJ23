@@ -79,16 +79,16 @@ footer a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+
    
 
 }
-#oradores p{
+#oradores p, #formulario p{
     text-align: center;
     margin-bottom: 0%;
     font-weight: lighter;
 }
-#oradores h2{
+#oradores h2, #formulario h2{
     text-align: center;
     margin-top: 0%;
 }
@@ -139,6 +139,11 @@ footer a{
 .texto{
     color:antiquewhite;
     background-color: rgb(52, 51, 51);
+}
+#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
