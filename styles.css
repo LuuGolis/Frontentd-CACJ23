@@ -1,0 +1,170 @@
+* {
+    font-family: 'Helvetica', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 10vh;
+    background-color: rgb(52, 51, 51);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+
+header img {
+
+    height: 10vh;
+    width: auto;
+    margin-left: 8%;
+}
+
+header p {
+    margin-right: 15%;
+    margin-top: 1.5%;
+}
+
+header a {
+    margin-right: 1%;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+footer {
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(25, 25, 49);
+}
+footer a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: small;
+}
+
+.banner {
+
+    min-height: 80vh;
+    background-image: url(./assets/ba1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(52, 51, 51);
+    background-blend-mode:multiply ;
+}
+
+
+.texto-banner {
+    padding-top: 15%;
+    padding-bottom: 5%;
+    padding-right: 12%;
+    height:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+    color: antiquewhite;
+}
+.texto-banner p{
+    width: 50%;
+}
+#oradores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+   
+
+}
+#oradores p, #formulario p{
+    text-align: center;
+    margin-bottom: 0%;
+    font-weight: lighter;
+}
+#oradores h2, #formulario h2{
+    text-align: center;
+    margin-top: 0%;
+}
+.card{
+    margin: 1%;
+}
+
+.tema{
+    display: inline;
+}
+#js{
+    background-color: rgb(255, 234, 0);
+    width: 45%;
+    border-radius: 8%;
+    font-weight:900;
+}
+#react{
+    background-color: rgb(7, 193, 7);
+    color: antiquewhite;
+    width:30%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+#negocios{
+    background-color: grey;
+    color: antiquewhite;
+    width:40%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+#startups{
+    background-color: rgb(156, 11, 11);
+    color: antiquewhite;
+    width:35%;
+    border-radius: 8%;
+    font-weight: 900;
+}
+
+#slides{
+    display: flex;
+    flex-direction: row;
+}
+#slides img{
+    width: 480px;
+    height:270;
+}
+
+.texto{
+    color:antiquewhite;
+    background-color: rgb(52, 51, 51);
+}
+#formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:576px) {
+    #oradores{
+        align-items: center;
+        width: 80%;
+        
+    }
+    #oradores .card{
+        margin-left: 25%;
+        
+    }
+}
+@media screen and (min-width:768px) {
+    #oradores{
+        width: 80%;
+        margin-left: 10%;
+    }
+   
+}
+
+
+
