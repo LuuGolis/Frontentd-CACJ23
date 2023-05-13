@@ -41,7 +41,7 @@
         </section>
 
         <section class="row mb-4" id="oradores">
-            <p>Conoce a los</p>
+            <p id="conoce" class="text-center">Conoce a los</p>
             <h2>ORADORES</h2>
             <div class="col-lg-4 col-md-4 col-sm-4 steve">
                 <div class="card" style="width: 15rem;">
@@ -56,9 +56,9 @@
                             </div>
                         </span>
                         <h5 class="card-title">Steve Jobs</h5>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda
-                            beatae perferendis. Repudiandae voluptates ut est exercitationem hic. Minima sed accusamus
-                            enim fuga quia voluptates iure! Expedita veniam quibusdam cupiditate.</p>
+                        <p class="card-text" id="texto-orador">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse
+                            ducimus aliquid? Inventore, praesentium magnam mollitia atque voluptas itaque libero numquam
+                            eveniet quod eius, placeat nemo ab soluta ducimus aperiam.</p>
 
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                             </div>
                         </span>
                         <h5 class="card-title">Bill Gates</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse
+                        <p class="card-text" id="texto-orador">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta esse
                             ducimus aliquid? Inventore, praesentium magnam mollitia atque voluptas itaque libero numquam
                             eveniet quod eius, placeat nemo ab soluta ducimus aperiam.</p>
 
@@ -97,7 +97,7 @@
                             </div>
                         </span>
                         <h5 class="card-title">Ada Lovelace</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+                            <p class="card-text" id="texto-orador" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
                             accusantium, quia exercitationem est dolore reiciendis asperiores hic distinctio animi qui
                             maiores magnam nam expedita non, quasi placeat deserunt iusto inventore.</p>
 
@@ -110,56 +110,47 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div id="slides">
+                    <div id="slides">
                         <img src="./assets/ba3.jpg" class="d-block w-50" alt="BsAS">
                         <div class="texto">
-                            <h2>Lugar - Mes</h2>
+                            <h3>Lugar - Mes</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
                             dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
-                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
+                           <button type="button" class="btn btn-outline-light">Conocé más</button>
                         </div>
-                    </div>
+                     </div>
                     </div>
                     <div class="carousel-item">
-                        <div id="slides">
-                        <img src="./assets/honolulu.jpg" class="d-block w-50" alt="Honolulu">
-                        <div class="texto">
-                            <h2>Lugar - Mes</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
-                            repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
-                            dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
-                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
+                          <div id="slides">
+                            <img src="./assets/honolulu.jpg" class="d-block w-50" alt="Honolulu">
+                            <div class="texto">
+                                <h3>Lugar - Mes</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
+                                repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
+                                dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
+                            <button type="button" class="btn btn-outline-light">Conocé más</button>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div id="slides">
+                 <div id="slides">
                         <img src="./assets/ba2.jpg" class="d-block w-50" alt="España">
                         <div class="texto">
-                            <h2>Lugar - Mes</h2>
+                            <h3>Lugar - Mes</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
                             dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
-                        <button type="button" class="btn btn-outline-light">Conocé más</button></div>
-                        </div>
+                        <button type="button" class="btn btn-outline-light">Conocé más</button>
+                      </div>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>         
+                </div>       
         </section>
 
         <section class="row" id="formulario">
-            <p>Conviértete en</p>
+            <p id="conviertete" class="text-center">Conviértete en</p>
             <h2>ORADOR</h2>
-            <p>Anótate para dar una charla ignite ¡Cuéntanos de qué quieres hablar!</p>
+            <p class="text-center">Anótate para dar una charla ignite ¡Cuéntanos de qué quieres hablar!</p>
             <form class="mb-3  col-10">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="nombre">

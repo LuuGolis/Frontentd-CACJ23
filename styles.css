@@ -42,7 +42,8 @@ footer {
     width: 100%;
     background-color: rgb(25, 25, 49);
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: antiquewhite;
     font-size: small;
@@ -55,7 +56,7 @@ footer a{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgb(52, 51, 51);
-    background-blend-mode:multiply ;
+    background-blend-mode: multiply;
 }
 
 
@@ -63,7 +64,7 @@ footer a{
     padding-top: 15%;
     padding-bottom: 5%;
     padding-right: 12%;
-    height:15%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -71,100 +72,134 @@ footer a{
     text-align: end;
     color: antiquewhite;
 }
-.texto-banner p{
+
+.texto-banner p {
     width: 50%;
 }
-#oradores{
+
+#oradores {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-   
-
 }
-#oradores p, #formulario p{
-    text-align: center;
+
+
+
+#formulario p,
+#texto-orador{
+    text-align: start;
+} 
+#conoce,
+#conviertete{
+
     margin-bottom: 0%;
     font-weight: lighter;
 }
-#oradores h2, #formulario h2{
+#oradores h2,
+#formulario h2 {
     text-align: center;
     margin-top: 0%;
 }
-.card{
+
+.card {
     margin: 1%;
 }
 
-.tema{
-    display: inline;
+.tema {
+    display: flex;
+    flex-direction: row;
+    gap:3%;
+    text-align: center;
+ 
 }
-#js{
+
+
+#js {
     background-color: rgb(255, 234, 0);
     width: 45%;
     border-radius: 8%;
-    font-weight:900;
+    font-weight: 700;
+    height: 2%;
+    
 }
-#react{
+
+#react {
     background-color: rgb(7, 193, 7);
     color: antiquewhite;
-    width:30%;
+    width: 30%;
     border-radius: 8%;
-    font-weight: 900;
+    font-weight: 700;
+    
 }
-#negocios{
+
+#negocios {
     background-color: grey;
     color: antiquewhite;
-    width:40%;
+    width: 40%;
     border-radius: 8%;
-    font-weight: 900;
+    
+    font-weight: 700;
 }
-#startups{
+
+#startups {
     background-color: rgb(156, 11, 11);
     color: antiquewhite;
-    width:35%;
+    width: 35%;
     border-radius: 8%;
-    font-weight: 900;
+    font-weight: 700;
+    
 }
 
-#slides{
+#carouselExampleAutoplaying {
+    width: 100%;
+    min-height: 10%;
+    margin-bottom: 2%;
+
+}
+
+#slides {
     display: flex;
     flex-direction: row;
-}
-#slides img{
-    width: 480px;
-    height:270;
+
 }
 
-.texto{
-    color:antiquewhite;
+#slides img {
+    width: 480px;
+    height: 270;
+}
+
+.texto {
+    color: antiquewhite;
     background-color: rgb(52, 51, 51);
 }
-#formulario{
+
+#formulario {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin-left: 10%;
 }
 
 
 @media screen and (max-width:576px) {
-    #oradores{
+    #oradores {
         align-items: center;
         width: 80%;
-        
+
     }
-    #oradores .card{
+
+    #oradores .card {
         margin-left: 25%;
-        
+
     }
 }
+
 @media screen and (min-width:768px) {
-    #oradores{
+    #oradores {
         width: 80%;
         margin-left: 10%;
     }
-   
+
 }
-
-
-
