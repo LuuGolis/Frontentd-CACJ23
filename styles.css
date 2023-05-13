@@ -84,18 +84,17 @@ footer a {
     align-items: center;
 }
 
-
-
 #formulario p,
 #texto-orador{
     text-align: start;
 } 
+
 #conoce,
 #conviertete{
-
     margin-bottom: 0%;
     font-weight: lighter;
 }
+
 #oradores h2,
 #formulario h2 {
     text-align: center;
@@ -111,17 +110,16 @@ footer a {
     flex-direction: row;
     gap:3%;
     text-align: center;
- 
+    padding: 0;
+    align-content: center;
+     
 }
-
 
 #js {
     background-color: rgb(255, 234, 0);
     width: 45%;
     border-radius: 8%;
-    font-weight: 700;
-    height: 2%;
-    
+    font-weight: 700;    
 }
 
 #react {
@@ -137,8 +135,7 @@ footer a {
     background-color: grey;
     color: antiquewhite;
     width: 40%;
-    border-radius: 8%;
-    
+    border-radius: 8%; 
     font-weight: 700;
 }
 
@@ -155,13 +152,11 @@ footer a {
     width: 100%;
     min-height: 10%;
     margin-bottom: 2%;
-
 }
 
 #slides {
     display: flex;
     flex-direction: row;
-
 }
 
 #slides img {
