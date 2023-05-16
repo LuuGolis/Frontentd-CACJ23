@@ -33,8 +33,20 @@ header p {
 header a {
     margin-right: 1%;
     text-decoration: none;
-    color: white;
+    color: grey;
     font-size: small;
+}
+header a:hover{
+    color: aliceblue;
+    font-weight: bold;
+}
+#active{
+    color: aliceblue;
+
+}
+
+#tickets{
+    color:green;
 }
 
 footer {
@@ -46,14 +58,18 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-wrap: wrap;
 }
 
 footer a {
     text-decoration: none;
-
     font-size: small;
+}
+footer a:hover{
+    color: aliceblue;
+    font-weight: bold;
 }
 
 .banner {
@@ -118,22 +134,23 @@ footer a {
     gap:3%;
     text-align: center;
     padding: 0;
-    height: 1.5rem;
+    height: 1.2rem;
     align-content: center;
-     
+     font-size: smaller;
+     margin-bottom: 2%;
 }
 
 #js {
     background-color: rgb(255, 234, 0);
-    width: 45%;
+    width: 35%;
     border-radius: 8%;
     font-weight: 700;    
 }
 
 #react {
-    background-color: rgb(7, 193, 7);
+    background-color: rgb(7, 193, 187);
     color: antiquewhite;
-    width: 30%;
+    width: 20%;
     border-radius: 8%;
     font-weight: 700;
     
@@ -142,7 +159,7 @@ footer a {
 #negocios {
     background-color: grey;
     color: antiquewhite;
-    width: 40%;
+    width: 30%;
     border-radius: 8%; 
     font-weight: 700;
 }
@@ -150,7 +167,7 @@ footer a {
 #startups {
     background-color: rgb(156, 11, 11);
     color: antiquewhite;
-    width: 35%;
+    width: 25%;
     border-radius: 8%;
     font-weight: 700;
     
@@ -175,6 +192,11 @@ footer a {
 .texto {
     color: antiquewhite;
     background-color: rgb(52, 51, 51);
+    padding: 2%;
+    padding-top: 1%;
+}
+.texto h3{
+    font-weight: bold;
 }
 
 #formulario {
@@ -188,13 +210,19 @@ footer a {
 #submit{
     width: 100%;
     height: 2rem;
-    border-radius: 5%;
+    border-radius: 2rem;
     background-color: rgb(2, 162, 2);
     color: antiquewhite;
     font-weight: 600;
     border-color: rgb(2, 162, 2);
 }
-
+#submit:hover{
+    background-color: rgb(35, 177, 35);
+    font-weight: bolder;
+}
+#titulo{
+    font-size: smaller;
+}
 
 @media screen and (max-width:576px) {
     #oradores {

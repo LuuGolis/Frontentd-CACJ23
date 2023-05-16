@@ -16,11 +16,11 @@
     <header class="sticky-top">
         <img class="logo" src="./assets/codoacodo.png" alt="Logo codo a codo">
         <p>Conf Bs As</p>
-        <a href="#">La conferencia</a>
+        <a href="#" id="active">La conferencia</a>
         <a href="#">Los oradores</a>
         <a href="#">El lugar y la fecha</a>
         <a href="#">Conviértete en orador</a>
-        <a href="#">Comprar tickets</a>
+        <a href="#" id="tickets">Comprar tickets</a>
     </header>
     <main>
 
@@ -113,7 +113,7 @@
                     <div id="slides">
                         <img src="./assets/ba3.jpg" class="d-block w-50" alt="BsAS">
                         <div class="texto">
-                            <h3>Lugar - Mes</h3>
+                            <h3>Buenos Aires - Octubre</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
                             dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
@@ -125,7 +125,7 @@
                           <div id="slides">
                             <img src="./assets/honolulu.jpg" class="d-block w-50" alt="Honolulu">
                             <div class="texto">
-                                <h3>Lugar - Mes</h3>
+                                <h3>Honolulu - Mayo</h3>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                                 repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
                                 dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
@@ -137,7 +137,7 @@
                  <div id="slides">
                         <img src="./assets/ba2.jpg" class="d-block w-50" alt="España">
                         <div class="texto">
-                            <h3>Lugar - Mes</h3>
+                            <h3>España - Julio</h3>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
                             repellat suscipit molestiae temporibus autem iusto, in odit nihil maxime ipsam error iure
                             dignissimos aliquam quisquam. Corrupti autem qui temporibus commodi.</p>
@@ -158,9 +158,9 @@
                 <label for="apellido" class="form-label">Apellido:</label>
                 <input type="text" class="form-control" id="apellido" >
         
-                <label for="tema-charla" class="form-label">¿Sobre qué quieres hablar?</label>
-                <textarea class="form-control" id="tema-charla" rows="3"></textarea>
-                <p>Recuerda incluir un título para tu charla</p>
+                <label for="tema-charla" class="form-label" ></label>
+                <textarea class="form-control" id="tema-charla" rows="3" placeholder="¿Sobre qué quieres hablar?"></textarea>
+                <p id="titulo">Recuerda incluir un título para tu charla</p>
                 <input type="submit" value="Submit" id="submit">
               </form>
         
