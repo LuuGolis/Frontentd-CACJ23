@@ -233,7 +233,13 @@ footer a:hover{
 
     #oradores .card {
         margin-left: 25%;
+        
 
+    }
+
+    .texto-banner p{
+        width: 80%;
+        padding-top: 5%;
     }
 }
 
