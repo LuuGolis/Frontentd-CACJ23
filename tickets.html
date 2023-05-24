@@ -26,21 +26,21 @@
 
         <section class="row" id="descuentos">
             <div class="col-4" id="estudiante">
-                <h4>Estudiante</h4>
+                <h4><b>Estudiante</b></h4>
                 <p id="texto">Tienen un descuento de</p>
-                <p id="descuento">80%</p>
+                <p id="descuento"><b>80%</b></p>
                 <p id="requisito">*Presentar documentación</p>
             </div>
             <div class="col-4" id="trainee">
-                <h4>Trainee</h4>
+                <h4><b>Trainee</b></h4>
                 <p id="texto">Tienen un descuento de</p>
-                <p id="descuento">50%</p>
+                <p id="descuento"><b>50%</b></p>
                 <p id="requisito">*Presentar documentación</p>
             </div>
             <div class="col-4" id="junior">
-                <h4>Junior</h4>
+                <h4><b>Junior</b></h4>
                 <p id="texto">Tienen un descuento de</p>
-                <p id="descuento">15%</p>
+                <p id="descuento"><b>15%</b></p>
                 <p id="requisito">*Presentar documentación</p>
             </div>
         </section>
@@ -48,26 +48,23 @@
             <p id="conviertete" class="text-center">Venta</p>
             <h2>VALOR DE TICKET $200</h2>
             <form class="mb-3  col-10">
-                <label for="nombre" class="form-label">Nombre:</label>
+                <span>
                 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-        
-                <label for="apellido" class="form-label">Apellido:</label>
                 <input type="text" class="form-control" id="apellido" placeholder="Apellido" >
-
-                <label for="email" class="form-label">Correo:</label>
+            </span>
                 <input type="email" class="form-control" id="email" placeholder="Correo">
 
-                <label for="cantidad" class="form-label">Cantidad:</label>
+                <label for="cantidad" class="form-label mt-2">Cantidad:</label>
                 <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
 
-                <label for="categoria" class="form-label">Categoria:</label>
+                <label for="categoria" class="form-label mt-3">Categoria:</label>
                 <input type="text" class="form-control" id="categoria" placeholder="Categoria">
        
-                <input type="text" class="form-control" id="total" placeholder="Total a pagar: $">
-                
+                <input type="text" class="form-control mt-3 mb-3" id="total" placeholder="Total a pagar: $">
+                <span class="botones">
                 <button class="btn-success">Borrar</button>
-
                 <button class="btn-success">Resumen</button>
+            </span>
               </form>
         
 

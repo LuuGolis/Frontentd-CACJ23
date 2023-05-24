@@ -224,6 +224,75 @@ footer a:hover{
     font-size: smaller;
 }
 
+#descuentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10% ;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+}
+#descuentos #requisito{
+font-size: smaller;
+color: gray;
+}
+
+#estudiante, #trainee, #junior{
+    justify-content: center;
+    border: solid 2px;
+    margin-right: 1%;
+    max-width: 30%;
+    text-align: center;
+    padding: 2%;
+}
+#estudiante{
+    border-color: rgb(0, 51, 255);
+}
+#trainee{
+    border-color: aqua;
+}
+#junior{
+    border-color: rgb(255, 221, 0);
+}
+#formulario span{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+#nombre, #apellido{
+    width: 49%;
+    margin: 2% 0  2% 0;
+}
+#email{
+    margin-bottom: 2%;
+}
+
+#total{
+    background-color: lightblue;
+}
+#total::placeholder{
+    color: rgb(29, 29, 122);
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones button{
+    width: 49%;
+    gap: 2%;
+    background-color: rgb(88, 189, 65);
+    color: antiquewhite;
+    font-weight: 600;
+    border: none;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
+
 @media screen and (max-width:576px) {
     #oradores {
         align-items: center;
