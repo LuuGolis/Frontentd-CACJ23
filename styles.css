@@ -258,18 +258,23 @@ color: gray;
 #junior{
     border-color: rgb(255, 221, 0);
 }
-#formulario span{
+#nombreApellido, #cantidadCategoria, .botones{
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 2%;
 }
-#nombre, #apellido{
+#formTickets #nombre,#formTickets #apellido,
+.cantidad, .categoria{
     width: 49%;
     margin: 2% 0  2% 0;
 }
 #email{
     margin-bottom: 2%;
 }
+
+
+
 
 #total{
     background-color: lightblue;

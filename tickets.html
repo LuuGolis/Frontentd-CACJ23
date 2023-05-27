@@ -47,20 +47,32 @@
         <section class="row" id="formulario">
             <p id="venta" class="text-center">Venta</p>
             <h2>VALOR DE TICKET $200</h2>
-            <form class="mb-3  col-10">
-                <span>
+            <form class="mb-3  col-10" id="formTickets">          
+                <span class="form-group" id="nombreApellido">
                 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                 <input type="text" class="form-control" id="apellido" placeholder="Apellido" >
             </span>
+            <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="Correo">
-
+            </div>
+            <div class="form-group" id="cantidadCategoria">
+                <span class="cantidad">
                 <label for="cantidad" class="form-label mt-2">Cantidad:</label>
                 <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
-
-                <label for="categoria" class="form-label mt-3">Categoria:</label>
-                <input type="text" class="form-control" id="categoria" placeholder="Categoria">
-       
+            </span>
+            <span class="categoria">
+                <label for="categoria" class="form-label mt-2">Categoria:</label>
+                <select id="categoria" name="categoria" class="form-control">
+                    <option value="">Categoria</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                </select>
+            </span>
+        </div>
+       <div class="form-group">
                 <input type="text" class="form-control mt-3 mb-3" id="total" placeholder="Total a pagar: $">
+            </div>
                 <span class="botones">
                 <button class="btn-success">Borrar</button>
                 <button class="btn-success">Resumen</button>
