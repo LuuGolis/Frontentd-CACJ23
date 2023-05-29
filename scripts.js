@@ -1,24 +1,42 @@
 
-function mostrarCategoria(){
-let selectedValue = document.getElementById("categoria").value;
-console.log(selectedValue);
-
+/*function mostrarCategoria(){
+let categoria = document.getElementById("categoria").value;
+//console.log(categoria);
+return categoria;
 }
 
-function tipoDescuento(categoria){
-    let descuento = 0;
-    
-    if(categoria === 'estudiante'){
+function valorElemento(id){
+    let elemento = document.getElementById(id).value;
+    return elemento;
+}*/
+
+function tipoDescuento(){
+    let descuento;
+    let categoria = document.getElementById("categoria").value;
+    console.log(categoria);
+    if(categoria == 1){
         descuento = 80;
+        console.log(descuento);
+        return descuento;
     }
-    if(categoria === 'trainee'){
+    else if(categoria == 2){
         descuento = 50;
+        console.log(descuento);
+        return descuento;
     }
-    if(categoria === 'junior'){
+    else if(categoria == 3){
         descuento = 15;
+        console.log(descuento);
+        return descuento;
     }
-    return descuento;
 }
+
+function descuento(tipo){
+    let desc = tipo;
+    let elem = document.getElementById('discount');
+    elem.innerHtml = desc;
+}
+
 
 function totalAPagar(cantidad, descuento){
     let total = cantidad * 200;
@@ -26,6 +44,5 @@ function totalAPagar(cantidad, descuento){
     let totalPago = total - totalDescuento;
 return totalPago;
 }
-
-let prueba = totalAPagar(5,15);
+let prueba = totalAPagar(5,tipoDescuento());
 console.log(prueba);
