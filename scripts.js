@@ -1,48 +1,44 @@
+//carga el dom
+window.addEventListener("DOMContentLoaded", function () {
 
-/*function mostrarCategoria(){
-let categoria = document.getElementById("categoria").value;
-//console.log(categoria);
-return categoria;
-}
+    //trae referencias de los elementos del dom y no de sus valores
+    //permite referenciar el elemento del dom multiples veces sin escanear el dom cada vez
 
-function valorElemento(id){
-    let elemento = document.getElementById(id).value;
-    return elemento;
-}*/
+    let domCategoria = document.getElementById("categoria");
+    let domCantidad = document.getElementById("cantidad");
+    let resumen = document.getElementById("resumen");
+    let domTotal = document.getElementById("total");
 
-function tipoDescuento(){
-    let descuento;
-    let categoria = document.getElementById("categoria").value;
-    console.log(categoria);
-    if(categoria == 1){
-        descuento = 80;
-        console.log(descuento);
-        return descuento;
+    //manejo de eventos de los campos y btn
+    resumen.addEventListener("click", mostrarResumen);
+    domCategoria.addEventListener("change", mostrarResumen);
+    domCantidad.addEventListener("change", mostrarResumen);
+
+    function mostrarResumen() {
+        let descuento = 0;
+
+        //determinar el descuento segun categoria elegida
+        
+        if (domCategoria.value == 0) {
+            //Enviar alerta para que el usuario complete el campo
+        }
+        else if (domCategoria.value == 1) {
+            descuento = 80;      
+        }
+        else if (domCategoria.value == 2) {
+            descuento = 50;
+        }
+        else if (domCategoria.value == 3) {
+            descuento = 15;         
+        }
+        
+        //calcula el valor de tickets
+
+        let total = domCantidad.value * 200;
+        let totalDescuento = (total * descuento) / 100;
+        let totalAPagar = total - totalDescuento;
+
+        domTotal.innerText = totalAPagar;
+        
     }
-    else if(categoria == 2){
-        descuento = 50;
-        console.log(descuento);
-        return descuento;
-    }
-    else if(categoria == 3){
-        descuento = 15;
-        console.log(descuento);
-        return descuento;
-    }
-}
-
-function descuento(tipo){
-    let desc = tipo;
-    let elem = document.getElementById('discount');
-    elem.innerHtml = desc;
-}
-
-
-function totalAPagar(cantidad, descuento){
-    let total = cantidad * 200;
-    let totalDescuento = (total * descuento) / 100;
-    let totalPago = total - totalDescuento;
-return totalPago;
-}
-let prueba = totalAPagar(5,tipoDescuento());
-console.log(prueba);
+});
