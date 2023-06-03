@@ -7,14 +7,15 @@ window.addEventListener("DOMContentLoaded", function () {
     let domCategoria = document.getElementById("categoria");
     let domCantidad = document.getElementById("cantidad");
     let resumen = document.getElementById("resumen");
-    let domTotal = document.getElementById("total");
+    let domTotal = document.getElementById("totalP");
+    let clicked = false;
 
     //manejo de eventos de los campos y btn
-    resumen.addEventListener("click", mostrarResumen);
-    domCategoria.addEventListener("change", mostrarResumen);
-    domCantidad.addEventListener("change", mostrarResumen);
+    resumen.addEventListener("click", calcularTotal );
+    domCategoria.addEventListener("change", calcularTotal);
+    domCantidad.addEventListener("change", calcularTotal);
 
-    function mostrarResumen() {
+    function calcularTotal() {
         let descuento = 0;
 
         //determinar el descuento segun categoria elegida
@@ -37,8 +38,9 @@ window.addEventListener("DOMContentLoaded", function () {
         let total = domCantidad.value * 200;
         let totalDescuento = (total * descuento) / 100;
         let totalAPagar = total - totalDescuento;
-
-        domTotal.innerText = totalAPagar;
+        
+       
+        resumen.onclick = function() { domTotal.innerText = "Total a pagar: $" + totalAPagar;}
         
     }
 });
