@@ -47,18 +47,23 @@
         <section class="row" id="formulario">
             <p id="venta" class="text-center">Venta</p>
             <h2>VALOR DE TICKET $200</h2>
-            <form class="mb-3  col-10" id="formTickets">          
+            <form class=" mb-3  col-10"  novalidate id="formTickets">          
                 <span class="form-group" id="nombreApellido">
                 <input type="text" class="form-control" id="nombre" placeholder="Nombre"  required>
+              <span class="error"></span>
+
                 <input type="text" class="form-control" id="apellido" placeholder="Apellido"  required>
+                
             </span>
             <div class="form-group">
                 <input type="email" class="form-control" id="email" placeholder="Correo" required>
+                
             </div>
             <div class="form-group" id="cantidadCategoria">
                 <span class="cantidad">
                 <label for="cantidad" class="form-label mt-2">Cantidad:</label>
-                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required>
+                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad"  required min="1" max="99">
+               
             </span>
             <span class="categoria">
                 <label for="categoria" class="form-label mt-2">Categoria:</label>
@@ -68,6 +73,7 @@
                     <option value="2">Trainee</option>
                     <option value="3">Junior</option>
                 </select>
+                
             </span>
         </div>
        <div class="form-group">
