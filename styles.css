@@ -36,17 +36,19 @@ header a {
     color: grey;
     font-size: small;
 }
-header a:hover{
+
+header a:hover {
     color: aliceblue;
     font-weight: bold;
 }
-#active{
+
+#active {
     color: aliceblue;
 
 }
 
-#tickets{
-    color:green;
+#tickets {
+    color: green;
 }
 
 footer {
@@ -67,7 +69,8 @@ footer a {
     text-decoration: none;
     font-size: small;
 }
-footer a:hover{
+
+footer a:hover {
     color: aliceblue;
     font-weight: bold;
 }
@@ -108,14 +111,15 @@ footer a:hover{
 }
 
 #formulario p,
-#texto-orador{
+#texto-orador {
     text-align: start;
-} 
+}
 
 #conoce,
-#conviertete{
+#conviertete {
     margin-bottom: 0%;
     font-weight: lighter;
+    text-align: center;
 }
 
 #oradores h2,
@@ -131,20 +135,20 @@ footer a:hover{
 .tema {
     display: flex;
     flex-direction: row;
-    gap:3%;
+    gap: 3%;
     text-align: center;
     padding: 0;
     height: 1.2rem;
     align-content: center;
-     font-size: smaller;
-     margin-bottom: 2%;
+    font-size: smaller;
+    margin-bottom: 2%;
 }
 
 #js {
     background-color: rgb(255, 234, 0);
     width: 35%;
     border-radius: 8%;
-    font-weight: 700;    
+    font-weight: 700;
 }
 
 #react {
@@ -153,14 +157,14 @@ footer a:hover{
     width: 20%;
     border-radius: 8%;
     font-weight: 700;
-    
+
 }
 
 #negocios {
     background-color: grey;
     color: antiquewhite;
     width: 30%;
-    border-radius: 8%; 
+    border-radius: 8%;
     font-weight: 700;
 }
 
@@ -170,7 +174,7 @@ footer a:hover{
     width: 25%;
     border-radius: 8%;
     font-weight: 700;
-    
+
 }
 
 #carouselExampleAutoplaying {
@@ -195,7 +199,8 @@ footer a:hover{
     padding: 2%;
     padding-top: 1%;
 }
-.texto h3{
+
+.texto h3 {
     font-weight: bold;
 }
 
@@ -207,7 +212,7 @@ footer a:hover{
     margin-left: 10%;
 }
 
-#submit{
+#submit {
     width: 100%;
     height: 2rem;
     border-radius: 2rem;
@@ -216,32 +221,37 @@ footer a:hover{
     font-weight: 600;
     border-color: rgb(2, 162, 2);
 }
-#submit:hover{
+
+#submit:hover {
     background-color: rgb(35, 177, 35);
     font-weight: bolder;
 }
-#titulo{
+
+#titulo {
     font-size: smaller;
 }
 
-#descuentos{
+#descuentos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 10% ;
+    margin-left: 10%;
     margin-right: 10%;
     margin-top: 3%;
     margin-bottom: 1%;
     flex-wrap: wrap;
 
 }
-#descuentos #requisito{
-font-size: smaller;
-color: gray;
+
+#descuentos #requisito {
+    font-size: smaller;
+    color: gray;
 }
 
-#estudiante, #trainee, #junior{
+#estudiante,
+#trainee,
+#junior {
     justify-content: center;
     border: solid 2px;
     margin-right: 1%;
@@ -249,53 +259,65 @@ color: gray;
     text-align: center;
     padding: 2%;
 }
-#estudiante{
+
+#estudiante {
     border-color: rgb(0, 51, 255);
 }
-#trainee{
+
+#trainee {
     border-color: aqua;
 }
-#junior{
+
+#junior {
     border-color: rgb(255, 221, 0);
 }
-#nombreApellido, #cantidadCategoria, .botones{
+
+#nombreApellido,
+#cantidadCategoria,
+.botones {
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 2%;
 }
-#formTickets #nombre,#formTickets #apellido,
-.cantidad, .categoria{
+
+#formTickets #nombre,
+#formTickets #apellido,
+.cantidad,
+.categoria {
     width: 49%;
-    margin: 2% 0  2% 0;
+    margin: 2% 0 2% 0;
 }
-#email{
+
+#email {
     margin-bottom: 2%;
 }
 
 
 
 
-#total{
+#total {
     background-color: lightblue;
     height: 2rem;
     border-radius: 0.2rem;
 
 }
-#totalP{
+
+#totalP {
     padding-left: 0.5rem;
     padding-top: 0.2rem;
 }
-#total::placeholder{
+
+#total::placeholder {
     color: rgb(29, 29, 122);
 }
 
-.botones{
+.botones {
     display: flex;
     flex-direction: row;
 }
 
-.botones button{
+.botones button {
     width: 49%;
     gap: 2%;
     background-color: rgb(88, 189, 65);
@@ -306,32 +328,16 @@ color: gray;
     border-radius: 0.5rem;
 }
 
-/* This is our style for the invalid fields */
+/* Estilo para inputs inválidos en form tickets */
 input:invalid {
     border-color: #900;
     background-color: #fdd;
-  }
-  
-  input:focus:invalid {
+}
+
+input:focus:invalid {
     outline: none;
-  }
-  
-  /* This is the style of our error messages */
-  .error {
-    width: 100%;
-    padding: 0;
-  
-    font-size: 80%;
-    color: white;
-    background-color: #900;
-    border-radius: 0 0 5px 5px;
-  
-    box-sizing: border-box;
-  }
-  
-  .error.active {
-    padding: 0.3em;
-  }
+}
+
 
 @media screen and (max-width:576px) {
     #oradores {
@@ -341,15 +347,17 @@ input:invalid {
 
     #oradores .card {
         margin-left: 25%;
-        
+
     }
 
-    .texto-banner p{
+    .texto-banner p {
         width: 80%;
         padding-top: 5%;
     }
 
-    #estudiante, #trainee, #junior{
+    #estudiante,
+    #trainee,
+    #junior {
         min-width: 80%;
         margin-bottom: 2%;
     }
@@ -362,4 +370,8 @@ input:invalid {
         margin-left: 10%;
     }
 
+    #formulario{
+        max-width: 50%;
+        margin-left: 25%;
+    }
 }
